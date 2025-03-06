@@ -1,1 +1,18 @@
 // このファイルにプログラムを作成する。
+class Breakfast {
+  init(meat, bread) {
+    this.meat = meat;
+    this.bread = bread;
+  }
+  cook() {
+    return "Cooking now ... " + this.meat + " and " + this.bread + ".";
+  }
+  serve(who) {
+    return "Enjoy your breakfast(" + this.meat + ", " + this.bread + "), " + who + ".";
+  }
+}
+
+var breakfast = Breakfast("sausage", "toast");
+print breakfast.cook();
+print breakfast.serve("Gentleman");
+print clock();
