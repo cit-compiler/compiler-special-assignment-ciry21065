@@ -4,7 +4,7 @@ import com.craftinginterpreters.lox.Lox;
 import java.util.List;
 
 
-class Interpreter implements Expr.Visitor<Object> {
+class Interpreter implements Expr.Visitor<Object>,Stmt.Visitor<Void> {
 
     private Environment environment = new Environment();
 
